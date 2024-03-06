@@ -1,0 +1,224 @@
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.roboto-medium-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+html {
+    // 
+    // box-shadow: 0 100% 100% 100% , inset;
+}
+
+body {
+    background: linear-gradient(45deg, #FF8040, #7A45D6);
+    background-size: 200% 200%;
+    animation: background 10s ease infinite;
+    transition: all 1s;
+}
+
+@keyframes background {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    padding: 90px 25px 50px;
+    // border: 2px solid #600CAC;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        .action {
+            width: 80%;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 40px;
+            background-color: #030303;
+            color: #fff;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+
+        .action:hover {
+            background-color: #FF8040;
+            cursor: pointer;
+        }
+    }
+
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    h1 {
+        font-family: 'Roboto';
+        font-weight: 500;
+        color: #7A45D6;
+        margin-bottom: 10px;
+    }
+
+    &__element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        svg {
+            width: 26px;
+            height: 26px;
+        }
+
+
+        span {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+}
+
+.info {
+    margin-bottom: 30px;
+}
+
+.card__img {
+    position: absolute;
+    top: -50px;
+    display: flex;
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border: 3px solid #030303;
+    border-radius: 50%;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    // align-items: center;
+
+    img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+.card-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.social {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+    }
+}
+
+.social:hover {
+    transition: all 2s;
+    background: linear-gradient(45deg, #FF8040, #FFA273);
+
+    svg {
+        path {
+            fill: #fff;
+        }
+
+    }
+}
+
+.indicators {
+    display: flex;
+    gap: 40px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span:first-child {
+            font-family: 'Roboto';
+            font-weight: 600;
+            font-size: 20px
+        }
+
+        span {
+            font-family: 'Roboto';
+            font-size: 20px
+        }
+
+    }
+}
