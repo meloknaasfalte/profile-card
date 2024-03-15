@@ -1,7 +1,7 @@
 # profile-card
 
 
-![screenshot](https://github.com/meloknaasfalte/profile-card/main/screenshots/profile-card.png)
+![screenshot]([https://github.com/meloknaasfalte/profile-card/main/screenshots/profile-card.png](https://github.com/meloknaasfalte/profile-card/blob/main/screenshots/profile-card.png))
 
 # bank-card
 
